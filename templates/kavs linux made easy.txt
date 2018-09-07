@@ -1,0 +1,679 @@
+terence@Terence:~$ 
+terence@Terence:~$ 
+terence@Terence:~$ 
+terence@Terence:~$ 
+terence@Terence:~$ cd Documents/
+terence@Terence:~/Documents$ 
+terence@Terence:~/Documents$ 
+terence@Terence:~/Documents$ 
+terence@Terence:~/Documents$ 
+terence@Terence:~/Documents$ 
+terence@Terence:~/Documents$ 
+terence@Terence:~/Documents$ 
+terence@Terence:~/Documents$ ls
+Git  learning-flask
+terence@Terence:~/Documents$ cd l
+bash: cd: l: No such file or directory
+terence@Terence:~/Documents$ cd learning-flask/
+terence@Terence:~/Documents/learning-flask$ ls
+README.md  routes.py  static  templates  venv
+terence@Terence:~/Documents/learning-flask$ cd templates/
+terence@Terence:~/Documents/learning-flask/templates$ 
+terence@Terence:~/Documents/learning-flask/templates$ 
+terence@Terence:~/Documents/learning-flask/templates$ 
+terence@Terence:~/Documents/learning-flask/templates$ 
+terence@Terence:~/Documents/learning-flask/templates$ touch layout.html
+terence@Terence:~/Documents/learning-flask/templates$ 
+terence@Terence:~/Documents/learning-flask/templates$ 
+terence@Terence:~/Documents/learning-flask/templates$ pwd
+/home/terence/Documents/learning-flask/templates
+terence@Terence:~/Documents/learning-flask/templates$ 
+terence@Terence:~/Documents/learning-flask/templates$ 
+terence@Terence:~/Documents/learning-flask/templates$ cd ..
+terence@Terence:~/Documents/learning-flask$ pwd
+/home/terence/Documents/learning-flask
+terence@Terence:~/Documents/learning-flask$ python routes.py
+  File "routes.py", line 11
+    app.run(debug=true)
+      ^
+IndentationError: expected an indented block
+terence@Terence:~/Documents/learning-flask$ 
+terence@Terence:~/Documents/learning-flask$ 
+terence@Terence:~/Documents/learning-flask$ python routes.py
+Traceback (most recent call last):
+  File "routes.py", line 1, in <module>
+    from flask import Flask, render_template
+ImportError: No module named flask
+terence@Terence:~/Documents/learning-flask$ 
+terence@Terence:~/Documents/learning-flask$ 
+terence@Terence:~/Documents/learning-flask$ 
+terence@Terence:~/Documents/learning-flask$ 
+terence@Terence:~/Documents/learning-flask$ ls
+README.md  routes.py  static  templates  venv
+terence@Terence:~/Documents/learning-flask$ cd venv/bin/
+terence@Terence:~/Documents/learning-flask/venv/bin$ ls
+activate       activate_this.py  flask  pip2.7   python2.7
+activate.csh   easy_install      pip    python   python-config
+activate.fish  easy_install-2.7  pip2   python2  wheel
+terence@Terence:~/Documents/learning-flask/venv/bin$ activate
+activate: command not found
+terence@Terence:~/Documents/learning-flask/venv/bin$ cd ../
+terence@Terence:~/Documents/learning-flask/venv$ cd ../
+terence@Terence:~/Documents/learning-flask$ cd venv/bin/activate
+bash: cd: venv/bin/activate: Not a directory
+terence@Terence:~/Documents/learning-flask$ source venv/bin/activate
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ ls
+README.md  routes.py  static  templates  venv
+(venv) terence@Terence:~/Documents/learning-flask$ pwd
+/home/terence/Documents/learning-flask
+(venv) terence@Terence:~/Documents/learning-flask$ python routes.py 
+Traceback (most recent call last):
+  File "routes.py", line 11, in <module>
+    app.run(debug=true)
+NameError: name 'true' is not defined
+(venv) terence@Terence:~/Documents/learning-flask$ python routes.py 
+ * Serving Flask app "routes" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 232-463-721
+127.0.0.1 - - [06/Sep/2018 17:49:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2018 17:49:30] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:49:30] "GET /static/img/device.png HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:49:30] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:49:30] "GET /favicon.ico HTTP/1.1" 404 -
+
+
+^C(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ python routes.py 
+ * Serving Flask app "routes" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 232-463-721
+127.0.0.1 - - [06/Sep/2018 17:53:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2018 17:53:24] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:53:24] "GET /static/img/device.png HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:53:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2018 17:53:27] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:53:27] "GET /static/img/device.png HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:53:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2018 17:53:29] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:53:29] "GET /static/img/device.png HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:54:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2018 17:54:18] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:54:18] "GET /static/img/device.png HTTP/1.1" 404 -
+^C(venv) terence@Terence:~/Documents/learning-flask$ python routes.py 
+ * Serving Flask app "routes" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 232-463-721
+127.0.0.1 - - [06/Sep/2018 17:54:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2018 17:54:30] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:54:30] "GET /static/img/device.png HTTP/1.1" 404 -
+127.0.0.1 - - [06/Sep/2018 17:54:36] "GET /static/img/device.png HTTP/1.1" 404 -
+^C(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ ls
+README.md  routes.py  static  templates  venv
+(venv) terence@Terence:~/Documents/learning-flask$ cd static
+(venv) terence@Terence:~/Documents/learning-flask/static$ ls
+css  img  js
+(venv) terence@Terence:~/Documents/learning-flask/static$ cd css
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ touch main.css
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ curl -O https://raw.githubusercontent.com/lpolepeddi/learning-flask/master/section-2/static/css/main.css
+
+Command 'curl' not found, but can be installed with:
+
+sudo apt install curl
+
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ sudo apt-get curl
+[sudo] password for terence: 
+E: Invalid operation curl
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ sudo apt install curl
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libcurl4
+The following NEW packages will be installed:
+  curl libcurl4
+0 upgraded, 2 newly installed, 0 to remove and 16 not upgraded.
+Need to get 373 kB of archives.
+After this operation, 1,036 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://za.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcurl4 amd64 7.58.0-2ubuntu3.2 [214 kB]
+Get:2 http://za.archive.ubuntu.com/ubuntu bionic-updates/main amd64 curl amd64 7.58.0-2ubuntu3.2 [159 kB]
+Fetched 373 kB in 2s (180 kB/s)
+Selecting previously unselected package libcurl4:amd64.
+(Reading database ... 170545 files and directories currently installed.)
+Preparing to unpack .../libcurl4_7.58.0-2ubuntu3.2_amd64.deb ...
+Unpacking libcurl4:amd64 (7.58.0-2ubuntu3.2) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../curl_7.58.0-2ubuntu3.2_amd64.deb ...
+Unpacking curl (7.58.0-2ubuntu3.2) ...
+Setting up libcurl4:amd64 (7.58.0-2ubuntu3.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for man-db (2.8.3-2) ...
+Setting up curl (7.58.0-2ubuntu3.2) ...
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ curl -O https://raw.githubusercontent.com/lpolepeddi/learning-flask/master/section-2/static/css/main.css
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  3684  100  3684    0     0  10233      0 --:--:-- --:--:-- --:--:-- 10204
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ ls
+main.css
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/css$ cd ../
+(venv) terence@Terence:~/Documents/learning-flask/static$ cd ../
+(venv) terence@Terence:~/Documents/learning-flask$ ls
+README.md  routes.py  static  templates  venv
+(venv) terence@Terence:~/Documents/learning-flask$ python routes.py 
+ * Serving Flask app "routes" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 232-463-721
+127.0.0.1 - - [07/Sep/2018 09:30:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2018 09:30:04] "GET /static/css/main.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2018 09:30:04] "GET /static/img/device.png HTTP/1.1" 404 -
+127.0.0.1 - - [07/Sep/2018 09:30:14] "GET /static/img/device.png HTTP/1.1" 404 -
+^C(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ ls
+README.md  routes.py  static  templates  venv
+(venv) terence@Terence:~/Documents/learning-flask$ cd static/
+(venv) terence@Terence:~/Documents/learning-flask/static$ ls
+css  img  js
+(venv) terence@Terence:~/Documents/learning-flask/static$ cd img/
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ curl -O https://github.com/lpolepeddi/learning-flask/raw/master/section-2/static/img/device.png
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   164  100   164    0     0    141      0  0:00:01  0:00:01 --:--:--   141
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ 
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ ls
+device.png
+(venv) terence@Terence:~/Documents/learning-flask/static/img$ cd /
+(venv) terence@Terence:/$ ls
+bin  boot  cdrom  dev  etc  home  initrd.img  initrd.img.old  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  swapfile  sys  tmp  usr  var  vmlinuz  vmlinuz.old
+(venv) terence@Terence:/$ cd ~
+~_apt                 ~colord/              ~gdm/                 ~irc                  ~man/                 ~pulse                ~sync/                ~terence/             ~whoopsie
+~avahi/               ~cups-pk-helper       ~geoclue/             ~kernoops/            ~messagebus           ~root/                ~sys/                 ~usbmux               ~www-data
+~avahi-autoipd/       ~daemon/              ~gnats                ~list                 ~news                 ~rtkit/               ~syslog               ~uucp                 
+~backup/              ~dnsmasq/             ~gnome-initial-setup  ~lp                   ~nobody               ~saned                ~systemd-network/     ~uuidd/               
+~bin/                 ~games/               ~hplip                ~mail/                ~proxy/               ~speech-dispatcher    ~systemd-resolve/     ~vboxadd              
+(venv) terence@Terence:/$ cd ~terence/Do
+Documents/ Downloads/ 
+(venv) terence@Terence:/$ cd ~terence/Do
+Documents/ Downloads/ 
+(venv) terence@Terence:/$ cd ~terence/Documents/learning-flask/static/
+(venv) terence@Terence:~/Documents/learning-flask/static$ cd ~terence/Documents/learning-flask/static/
+(venv) terence@Terence:~/Documents/learning-flask/static$ python routes.py 
+python: can't open file 'routes.py': [Errno 2] No such file or directory
+(venv) terence@Terence:~/Documents/learning-flask/static$ cd ../
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ python routes.py 
+ * Serving Flask app "routes" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 232-463-721
+127.0.0.1 - - [07/Sep/2018 09:36:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2018 09:36:30] "GET /static/img/device.png HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2018 09:36:33] "GET / HTTP/1.1" 200 -
+(venv) terence@Terence:~/Documents/learning-flask$ 
+(venv) terence@Terence:~/Documents/learning-flask$ history 
+    1  sudo snap install --classic heroku
+    2  heroku login
+    3  cd Documents/
+    4  ls
+    5  cd learning-flask
+    6  source venv/bin/activate
+    7  mkdir static
+    8  cd static/
+    9  mkdir css
+   10  mkdir js
+   11  mkdir img
+   12  cd ../
+   13  mkdir templates
+   14  touch routes.py
+   15  touch README.MD
+   16  ls
+   17  rm README.MD 
+   18  ls
+   19  touch README.md
+   20  ls
+   21  cd templates/
+   22  touch index.html
+   23  sudo su
+   24  ls
+   25  cd Documents/
+   26  mkdir learning-flask
+   27  cd learning-flask/f
+   28  cd learning-flask/
+   29  virtualenv venv
+   30  source venv/bin/activate
+   31  pip install flask
+   32  ls
+   33  add-apt-repository ppa:git-core/ppa
+   34  sudo add-apt-repository ppa:git-core/ppa
+   35  sudo apt update
+   36  sudo apt install git
+   37  '
+   38  git config --global user.name "terence"
+   39  git config --global user.email "terencev1@gmail.com"
+   40  create database learningflask;
+   41  sudo su
+   42  cd Documents/
+   43  ls
+   44  cd l
+   45  cd learning-flask/
+   46  ls
+   47  cd templates/
+   48  touch layout.html
+   49  pwd
+   50  cd ..
+   51  pwd
+   52  python routes.py
+   53  ls
+   54  cd venv/bin/
+   55  ls
+   56  activate
+   57  cd ../
+   58  cd venv/bin/activate
+   59  source venv/bin/activate
+   60  ls
+   61  pwd
+   62  python routes.py 
+   63  ls
+   64  cd static
+   65  ls
+   66  cd css
+   67  touch main.css
+   68  curl -O https://raw.githubusercontent.com/lpolepeddi/learning-flask/master/section-2/static/css/main.css
+   69  sudo apt-get curl
+   70  sudo apt install curl
+   71  curl -O https://raw.githubusercontent.com/lpolepeddi/learning-flask/master/section-2/static/css/main.css
+   72  ls
+   73  cd ../
+   74  ls
+   75* 
+   76  ls
+   77  cd static/
+   78  ls
+   79  cd img/
+   80  curl -O https://github.com/lpolepeddi/learning-flask/raw/master/section-2/static/img/device.png
+   81  ls
+   82  cd /
+   83  ls
+   84  cd ~terence/Documents/learning-flask/static/
+   85  python routes.py 
+   86  cd ../
+   87  python routes.py 
+   88  history 
+(venv) terence@Terence:~/Documents/learning-flask$ sudo apt install fzf
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package fzf
+(venv) terence@Terence:~/Documents/learning-flask$ brew install fzf
+
+Command 'brew' not found, but can be installed with:
+
+sudo apt install linuxbrew-wrapper
+
+(venv) terence@Terence:~/Documents/learning-flask$ sudo apt install linuxbrew-wrapper
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  fonts-lato javascript-common libjs-jquery libruby2.5 rake ruby ruby-did-you-mean ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby2.5 rubygems-integration
+Suggested packages:
+  apache2 | lighttpd | httpd ri ruby-dev bundler
+The following NEW packages will be installed:
+  fonts-lato javascript-common libjs-jquery libruby2.5 linuxbrew-wrapper rake ruby ruby-did-you-mean ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby2.5 rubygems-integration
+0 upgraded, 14 newly installed, 0 to remove and 16 not upgraded.
+Need to get 6,170 kB of archives.
+After this operation, 27.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] yu
+Get:1 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 fonts-lato all 2.0-2 [2,698 kB]
+Get:2 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 javascript-common all 11 [6,066 B]                                                                                                             
+Get:3 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 libjs-jquery all 3.2.1-1 [152 kB]                                                                                                              
+Get:4 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 rubygems-integration all 1.11 [4,994 B]                                                                                                        
+Get:5 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 ruby2.5 amd64 2.5.1-1ubuntu1 [48.6 kB]                                                                                                         
+Get:6 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 ruby amd64 1:2.5.1 [5,712 B]                                                                                                                   
+Get:7 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 rake all 12.3.1-1 [45.1 kB]                                                                                                                    
+Get:8 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 ruby-did-you-mean all 1.2.0-2 [9,700 B]                                                                                                        
+Get:9 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 ruby-minitest all 5.10.3-1 [38.6 kB]                                                                                                           
+Get:10 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 ruby-net-telnet all 0.1.1-2 [12.6 kB]                                                                                                         
+Get:11 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 ruby-power-assert all 0.3.0-1 [7,952 B]                                                                                                       
+Get:12 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 ruby-test-unit all 3.2.5-1 [61.1 kB]                                                                                                          
+Get:13 http://za.archive.ubuntu.com/ubuntu bionic/main amd64 libruby2.5 amd64 2.5.1-1ubuntu1 [3,066 kB]                                                                                                    
+Get:14 http://za.archive.ubuntu.com/ubuntu bionic/universe amd64 linuxbrew-wrapper all 20170516-2 [13.6 kB]                                                                                                
+Fetched 6,170 kB in 26s (241 kB/s)                                                                                                                                                                         
+Selecting previously unselected package fonts-lato.
+(Reading database ... 170558 files and directories currently installed.)
+Preparing to unpack .../00-fonts-lato_2.0-2_all.deb ...
+Unpacking fonts-lato (2.0-2) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../01-javascript-common_11_all.deb ...
+Unpacking javascript-common (11) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../02-libjs-jquery_3.2.1-1_all.deb ...
+Unpacking libjs-jquery (3.2.1-1) ...
+Selecting previously unselected package rubygems-integration.
+Preparing to unpack .../03-rubygems-integration_1.11_all.deb ...
+Unpacking rubygems-integration (1.11) ...
+Selecting previously unselected package ruby2.5.
+Preparing to unpack .../04-ruby2.5_2.5.1-1ubuntu1_amd64.deb ...
+Unpacking ruby2.5 (2.5.1-1ubuntu1) ...
+Selecting previously unselected package ruby.
+Preparing to unpack .../05-ruby_1%3a2.5.1_amd64.deb ...
+Unpacking ruby (1:2.5.1) ...
+Selecting previously unselected package rake.
+Preparing to unpack .../06-rake_12.3.1-1_all.deb ...
+Unpacking rake (12.3.1-1) ...
+Selecting previously unselected package ruby-did-you-mean.
+Preparing to unpack .../07-ruby-did-you-mean_1.2.0-2_all.deb ...
+Unpacking ruby-did-you-mean (1.2.0-2) ...
+Selecting previously unselected package ruby-minitest.
+Preparing to unpack .../08-ruby-minitest_5.10.3-1_all.deb ...
+Unpacking ruby-minitest (5.10.3-1) ...
+Selecting previously unselected package ruby-net-telnet.
+Preparing to unpack .../09-ruby-net-telnet_0.1.1-2_all.deb ...
+Unpacking ruby-net-telnet (0.1.1-2) ...
+Selecting previously unselected package ruby-power-assert.
+Preparing to unpack .../10-ruby-power-assert_0.3.0-1_all.deb ...
+Unpacking ruby-power-assert (0.3.0-1) ...
+Selecting previously unselected package ruby-test-unit.
+Preparing to unpack .../11-ruby-test-unit_3.2.5-1_all.deb ...
+Unpacking ruby-test-unit (3.2.5-1) ...
+Selecting previously unselected package libruby2.5:amd64.
+Preparing to unpack .../12-libruby2.5_2.5.1-1ubuntu1_amd64.deb ...
+Unpacking libruby2.5:amd64 (2.5.1-1ubuntu1) ...
+Selecting previously unselected package linuxbrew-wrapper.
+Preparing to unpack .../13-linuxbrew-wrapper_20170516-2_all.deb ...
+Unpacking linuxbrew-wrapper (20170516-2) ...
+Setting up libjs-jquery (3.2.1-1) ...
+Setting up fonts-lato (2.0-2) ...
+Setting up ruby-did-you-mean (1.2.0-2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up ruby-net-telnet (0.1.1-2) ...
+Setting up rubygems-integration (1.11) ...
+Processing triggers for man-db (2.8.3-2) ...
+Setting up javascript-common (11) ...
+Setting up ruby-minitest (5.10.3-1) ...
+Processing triggers for fontconfig (2.12.6-0ubuntu2) ...
+Setting up ruby-power-assert (0.3.0-1) ...
+Setting up ruby2.5 (2.5.1-1ubuntu1) ...
+Setting up ruby (1:2.5.1) ...
+Setting up ruby-test-unit (3.2.5-1) ...
+Setting up rake (12.3.1-1) ...
+Setting up linuxbrew-wrapper (20170516-2) ...
+Setting up libruby2.5:amd64 (2.5.1-1ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+(venv) terence@Terence:~/Documents/learning-flask$ brew install fzf
+==> This script will install:
+/home/linuxbrew/.linuxbrew/bin/brew
+/home/linuxbrew/.linuxbrew/share/doc/homebrew
+/home/linuxbrew/.linuxbrew/share/man/man1/brew.1
+/home/linuxbrew/.linuxbrew/share/zsh/site-functions/_brew
+/home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew
+/home/terence/.cache/Homebrew/
+/home/linuxbrew/.linuxbrew/Homebrew
+==> The following new directories will be created:
+/home/linuxbrew/.linuxbrew/Cellar
+/home/linuxbrew/.linuxbrew/bin
+/home/linuxbrew/.linuxbrew/etc
+/home/linuxbrew/.linuxbrew/include
+/home/linuxbrew/.linuxbrew/lib
+/home/linuxbrew/.linuxbrew/opt
+/home/linuxbrew/.linuxbrew/sbin
+/home/linuxbrew/.linuxbrew/share
+/home/linuxbrew/.linuxbrew/share/zsh
+/home/linuxbrew/.linuxbrew/share/zsh/site-functions
+/home/linuxbrew/.linuxbrew/var
+/home/linuxbrew/.linuxbrew/Homebrew
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/mkdir -p /home/linuxbrew/.linuxbrew
+==> /usr/bin/sudo /bin/chown terence:terence /home/linuxbrew/.linuxbrew
+==> /usr/bin/sudo /bin/mkdir -p /home/linuxbrew/.linuxbrew/Cellar /home/linuxbrew/.linuxbrew/bin /home/linuxbrew/.linuxbrew/etc /home/linuxbrew/.linuxbrew/include /home/linuxbrew/.linuxbrew/lib /home/linuxbrew/.linuxbrew/opt /home/linuxbrew/.linuxbrew/sbin /home/linuxbrew/.linuxbrew/share /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions /home/linuxbrew/.linuxbrew/var /home/linuxbrew/.linuxbrew/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /home/linuxbrew/.linuxbrew/Cellar /home/linuxbrew/.linuxbrew/bin /home/linuxbrew/.linuxbrew/etc /home/linuxbrew/.linuxbrew/include /home/linuxbrew/.linuxbrew/lib /home/linuxbrew/.linuxbrew/opt /home/linuxbrew/.linuxbrew/sbin /home/linuxbrew/.linuxbrew/share /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions /home/linuxbrew/.linuxbrew/var /home/linuxbrew/.linuxbrew/Homebrew
+==> /usr/bin/sudo /bin/chmod 755 /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions
+==> /usr/bin/sudo /bin/chown terence /home/linuxbrew/.linuxbrew/Cellar /home/linuxbrew/.linuxbrew/bin /home/linuxbrew/.linuxbrew/etc /home/linuxbrew/.linuxbrew/include /home/linuxbrew/.linuxbrew/lib /home/linuxbrew/.linuxbrew/opt /home/linuxbrew/.linuxbrew/sbin /home/linuxbrew/.linuxbrew/share /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions /home/linuxbrew/.linuxbrew/var /home/linuxbrew/.linuxbrew/Homebrew
+==> /usr/bin/sudo /bin/chgrp terence /home/linuxbrew/.linuxbrew/Cellar /home/linuxbrew/.linuxbrew/bin /home/linuxbrew/.linuxbrew/etc /home/linuxbrew/.linuxbrew/include /home/linuxbrew/.linuxbrew/lib /home/linuxbrew/.linuxbrew/opt /home/linuxbrew/.linuxbrew/sbin /home/linuxbrew/.linuxbrew/share /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions /home/linuxbrew/.linuxbrew/var /home/linuxbrew/.linuxbrew/Homebrew
+==> /usr/bin/sudo /bin/mkdir -p /home/terence/.cache/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /home/terence/.cache/Homebrew
+==> /usr/bin/sudo /bin/chown terence /home/terence/.cache/Homebrew
+==> /usr/bin/sudo /bin/chgrp terence /home/terence/.cache/Homebrew
+==> Downloading and installing Linuxbrew...
+remote: Counting objects: 10068, done.
+remote: Compressing objects: 100% (4764/4764), done.
+remote: Total 10068 (delta 6989), reused 7231 (delta 5020), pack-reused 0
+Receiving objects: 100% (10068/10068), 3.50 MiB | 459.00 KiB/s, done.
+Resolving deltas: 100% (6989/6989), done.
+From https://github.com/Linuxbrew/brew
+ * [new branch]      master     -> origin/master
+ * [new tag]         1.0.0      -> 1.0.0
+ * [new tag]         1.0.1      -> 1.0.1
+ * [new tag]         1.0.2      -> 1.0.2
+ * [new tag]         1.0.3      -> 1.0.3
+ * [new tag]         1.0.4      -> 1.0.4
+ * [new tag]         1.0.5      -> 1.0.5
+ * [new tag]         1.0.6      -> 1.0.6
+ * [new tag]         1.0.7      -> 1.0.7
+ * [new tag]         1.0.8      -> 1.0.8
+ * [new tag]         1.0.9      -> 1.0.9
+ * [new tag]         1.1.0      -> 1.1.0
+ * [new tag]         1.1.0.1    -> 1.1.0.1
+ * [new tag]         1.1.1      -> 1.1.1
+ * [new tag]         1.1.10     -> 1.1.10
+ * [new tag]         1.1.11     -> 1.1.11
+ * [new tag]         1.1.12     -> 1.1.12
+ * [new tag]         1.1.13     -> 1.1.13
+ * [new tag]         1.1.2      -> 1.1.2
+ * [new tag]         1.1.2.1    -> 1.1.2.1
+ * [new tag]         1.1.3      -> 1.1.3
+ * [new tag]         1.1.4      -> 1.1.4
+ * [new tag]         1.1.5      -> 1.1.5
+ * [new tag]         1.1.6      -> 1.1.6
+ * [new tag]         1.1.7      -> 1.1.7
+ * [new tag]         1.1.8      -> 1.1.8
+ * [new tag]         1.1.9      -> 1.1.9
+ * [new tag]         1.2.0      -> 1.2.0
+ * [new tag]         1.2.1      -> 1.2.1
+ * [new tag]         1.2.2      -> 1.2.2
+ * [new tag]         1.2.3      -> 1.2.3
+ * [new tag]         1.2.4      -> 1.2.4
+ * [new tag]         1.2.5      -> 1.2.5
+ * [new tag]         1.2.6      -> 1.2.6
+ * [new tag]         1.2.7      -> 1.2.7
+ * [new tag]         1.2.8      -> 1.2.8
+ * [new tag]         1.3.0      -> 1.3.0
+ * [new tag]         1.3.1      -> 1.3.1
+ * [new tag]         1.3.2      -> 1.3.2
+ * [new tag]         1.3.3      -> 1.3.3
+ * [new tag]         1.3.4      -> 1.3.4
+ * [new tag]         1.3.5      -> 1.3.5
+ * [new tag]         1.3.6      -> 1.3.6
+ * [new tag]         1.3.7      -> 1.3.7
+ * [new tag]         1.3.8      -> 1.3.8
+ * [new tag]         1.3.9      -> 1.3.9
+ * [new tag]         1.4.0      -> 1.4.0
+ * [new tag]         1.4.1      -> 1.4.1
+ * [new tag]         1.4.2      -> 1.4.2
+ * [new tag]         1.4.3      -> 1.4.3
+ * [new tag]         1.5.0      -> 1.5.0
+ * [new tag]         1.5.1      -> 1.5.1
+ * [new tag]         1.5.10     -> 1.5.10
+ * [new tag]         1.5.11     -> 1.5.11
+ * [new tag]         1.5.12     -> 1.5.12
+ * [new tag]         1.5.13     -> 1.5.13
+ * [new tag]         1.5.14     -> 1.5.14
+ * [new tag]         1.5.2      -> 1.5.2
+ * [new tag]         1.5.3      -> 1.5.3
+ * [new tag]         1.5.4      -> 1.5.4
+ * [new tag]         1.5.5      -> 1.5.5
+ * [new tag]         1.5.6      -> 1.5.6
+ * [new tag]         1.5.7      -> 1.5.7
+ * [new tag]         1.5.8      -> 1.5.8
+ * [new tag]         1.5.9      -> 1.5.9
+ * [new tag]         1.6.0      -> 1.6.0
+ * [new tag]         1.6.1      -> 1.6.1
+ * [new tag]         1.6.10     -> 1.6.10
+ * [new tag]         1.6.11     -> 1.6.11
+ * [new tag]         1.6.12     -> 1.6.12
+ * [new tag]         1.6.13     -> 1.6.13
+ * [new tag]         1.6.14     -> 1.6.14
+ * [new tag]         1.6.15     -> 1.6.15
+ * [new tag]         1.6.16     -> 1.6.16
+ * [new tag]         1.6.17     -> 1.6.17
+ * [new tag]         1.6.2      -> 1.6.2
+ * [new tag]         1.6.3      -> 1.6.3
+ * [new tag]         1.6.4      -> 1.6.4
+ * [new tag]         1.6.5      -> 1.6.5
+ * [new tag]         1.6.6      -> 1.6.6
+ * [new tag]         1.6.7      -> 1.6.7
+ * [new tag]         1.6.8      -> 1.6.8
+ * [new tag]         1.6.9      -> 1.6.9
+ * [new tag]         1.7.0      -> 1.7.0
+ * [new tag]         1.7.1      -> 1.7.1
+ * [new tag]         1.7.2      -> 1.7.2
+ * [new tag]         1.7.3      -> 1.7.3
+HEAD is now at 201dae5 LinkageChecker: Factor out Linux-specific features (#838)
+==> Linuxbrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Linuxbrew/brew#donations
+==> Tapping homebrew/core
+Cloning into '/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core'...
+remote: Counting objects: 4884, done.
+remote: Compressing objects: 100% (4682/4682), done.
+remote: Total 4884 (delta 48), reused 342 (delta 11), pack-reused 0
+Receiving objects: 100% (4884/4884), 4.30 MiB | 3.07 MiB/s, done.
+Resolving deltas: 100% (48/48), done.
+Tapped 3 commands and 4666 formulae (4,926 files, 13.4MB).
+Already up-to-date.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate user behaviour analytics.
+Read the analytics documentation (and how to opt-out) here:
+  http://docs.brew.sh/Analytics.html
+
+==> Next steps:
+- Install the Linuxbrew dependencies if you have sudo access:
+  Debian, Ubuntu, etc.
+    sudo apt-get install build-essential
+  Fedora, Red Hat, CentOS, etc.
+    sudo yum groupinstall 'Development Tools'
+  See http://linuxbrew.sh/#dependencies for more information.
+- Add Linuxbrew to your ~/.bash_profile by running
+    echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.bash_profile
+    echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.bash_profile
+    echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.bash_profile
+- Add Linuxbrew to your PATH
+    PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+- We recommend that you install GCC by running:
+    brew install gcc
+- Run `brew help` to get started
+- Further documentation: 
+    http://docs.brew.sh
+Warning: /home/linuxbrew/.linuxbrew/bin is not in your PATH.
+/usr/bin/brew: 78: exec: /home/terence/.linuxbrew/bin/brew: not found
+(venv) terence@Terence:~/Documents/learning-flask$ brew install fzf
+==> Installing dependencies for fzf: patchelf, ncurses
+==> Installing fzf dependency: patchelf
+==> Downloading https://linuxbrew.bintray.com/bottles/patchelf-0.9_1.x86_64_linux.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/00/00c02e6c700f4427da40a82e2a5d88427cfb28a79b3ac69f441d69d8377254f4?__gda__=exp=1536306814~hmac=f6319bbf911f05313b9298e94ac080a186c4ef6af71f246a87b593740717
+######################################################################## 100.0%
+==> Pouring patchelf-0.9_1.x86_64_linux.bottle.tar.gz
+🍺  /home/linuxbrew/.linuxbrew/Cellar/patchelf/0.9_1: 6 files, 1.2MB
+==> Installing fzf dependency: ncurses
+==> Downloading https://linuxbrew.bintray.com/bottles/ncurses-6.1.x86_64_linux.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/5e/5eb929e69e3a2b71c2161551825fd16146efc164ab7dbea25d2a5b73b51cd1cb?__gda__=exp=1536306817~hmac=9844ee0ffb836d070e7c7f100bb64a3104a6e914886e64d39daf1fbf19c3
+######################################################################## 100.0%
+==> Pouring ncurses-6.1.x86_64_linux.bottle.tar.gz
+🍺  /home/linuxbrew/.linuxbrew/Cellar/ncurses/6.1: 3,856 files, 15.4MB
+==> Installing fzf
+==> Downloading https://linuxbrew.bintray.com/bottles/fzf-0.17.4.x86_64_linux.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/05/0553f86f8a7ffdbc960e9a6d5b9f937fe2a6d3d1ded754585fde7480ddd62864?__gda__=exp=1536306821~hmac=1e2488ee3030d5c6883052792335299acacac631e9de75b2c9a1c440bd47
+######################################################################## 100.0%
+==> Pouring fzf-0.17.4.x86_64_linux.bottle.tar.gz
+==> Caveats
+To install useful keybindings and fuzzy completion:
+  /home/linuxbrew/.linuxbrew/opt/fzf/install
+
+To use fzf in Vim, add the following line to your .vimrc:
+  set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+==> Summary
+🍺  /home/linuxbrew/.linuxbrew/Cellar/fzf/0.17.4: 17 files, 3.6MB
+==> Caveats
+==> fzf
+To install useful keybindings and fuzzy completion:
+  /home/linuxbrew/.linuxbrew/opt/fzf/install
+
+To use fzf in Vim, add the following line to your .vimrc:
+  set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+(venv) terence@Terence:~/Documents/learning-flask$ source ~terence/.bash_
+.bash_history  .bash_logout   
+(venv) terence@Terence:~/Documents/learning-flask$ source ~terence/.bash_
+.bash_history  .bash_logout   
+(venv) terence@Terence:~/Documents/learning-flask$ source ~terence/.bash
+.bash_history  .bash_logout   .bashrc        
+(venv) terence@Terence:~/Documents/learning-flask$ source ~terence/.bash
+.bash_history  .bash_logout   .bashrc        
+(venv) terence@Terence:~/Documents/learning-flask$ source ~terence/.bashrc 
+terence@Terence:~/Documents/learning-flask$ source ~terence/.bashrc 
+terence@Terence:~/Documents/learning-flask$ cd ~terence/Documents/learning-flask/static/
+terence@Terence:~/Documents/learning-flask/static$ 
+
